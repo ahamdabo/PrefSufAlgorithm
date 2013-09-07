@@ -3,7 +3,7 @@ import java.util.HashSet;
 
 /**
  * 
- * @author Ahmed
+ * @author Ahmed AboElhassan
  * 
  */
 public class PrefSufTest {
@@ -14,9 +14,6 @@ public class PrefSufTest {
 		System.out.print(solution(A));
 
 	}
-
-	// you can also use imports, for example:
-	// import java.math.*;
 
 	public static int solution(int A[]) {
 
@@ -43,7 +40,7 @@ public class PrefSufTest {
 				if (sa.equals(pa)) {
 					System.out.println("here's pair" + "[" + i + "]" + "[" + j
 							+ "]");
-			//		 System.out.println(pa + " " + sa);
+					// System.out.println(pa + " " + sa);
 					ctr++;
 				}
 
@@ -51,9 +48,12 @@ public class PrefSufTest {
 			sa.clear();
 			pa.clear();
 		}
-		if(ctr > 1000000000) return 1000000000;
-		
-		else {return (int)ctr;}
+		if (ctr > 1000000000)
+			return 1000000000;
+
+		else {
+			return (int) ctr;
+		}
 	}
 
 	public static ArrayList rearrange(ArrayList al) {
