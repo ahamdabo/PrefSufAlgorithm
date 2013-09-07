@@ -20,7 +20,7 @@ public class PrefSufTest {
 
 	public static int solution(int A[]) {
 
-		int ctr = 0;
+		long ctr = 0;
 
 		ArrayList pa = new ArrayList();
 		ArrayList sa = new ArrayList();
@@ -43,7 +43,7 @@ public class PrefSufTest {
 				if (sa.equals(pa)) {
 					System.out.println("here's pair" + "[" + i + "]" + "[" + j
 							+ "]");
-					// System.out.println(pa + " " + sa);
+			//		 System.out.println(pa + " " + sa);
 					ctr++;
 				}
 
@@ -51,7 +51,9 @@ public class PrefSufTest {
 			sa.clear();
 			pa.clear();
 		}
-		return ctr;
+		if(ctr > 1000000000) return 1000000000;
+		
+		else {return (int)ctr;}
 	}
 
 	public static ArrayList rearrange(ArrayList al) {
